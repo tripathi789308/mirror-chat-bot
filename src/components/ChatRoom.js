@@ -19,7 +19,7 @@ export default function ChatRoom(props) {
       scroll.current.scrollIntoView({ behavior: 'smooth' });
     },[messages]);
     useEffect(()=>{
-      props.setName(auth.currentUser.displayName);
+      props.setName(props.auth.currentUser.displayName);
       focus.current.focus();
       },[])
   
@@ -54,7 +54,7 @@ export default function ChatRoom(props) {
   return (<>
     <main>
 
-      {messages && messages.map(msg => <>{msg.uid == auth.currentUser.uid && <ChatMessage key={msg.id} message={msg} name={props.name}/>}</>)}
+      {messages && messages.map(msg => <>{msg.uid === auth.currentUser.uid && <ChatMessage key={msg.id} message={msg} name={props.name}/>}</>)}
 
       <span ref={scroll}></span>
 

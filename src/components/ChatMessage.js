@@ -2,10 +2,11 @@ import React,{useState,useEffect} from "react";
 
 export default function ChatMessage(props) {
     const { text, sendBy } = props.message;
+    const { name } = props.name;
     const messageClass = sendBy === "user" ? 'sent' : 'received';
     const [firstName,setFirstName] = useState("");
     useEffect(()=>{
-      let value = props.name.split(" ");
+      let value = name.split(" ");
       if(sendBy === "user")
       setFirstName(value[0]);
       else
