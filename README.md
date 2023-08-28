@@ -22,8 +22,8 @@ Welcome to the React Chat App with Firebase! This is a simple chat application b
 
 ## How to Run
 
-1. Clone this repository using `git clone https://github.com/yourusername/react-firebase-chat-app.git`
-2. Navigate to the project directory: `cd react-firebase-chat-app`
+1. Clone this repository using `git clone https://github.com/tripathi789308/mirror-chat-bot`
+2. Navigate to the project directory: `cd mirror-chat-bot`
 3. Install dependencies: `npm install`
 4. Set up a Firebase project and obtain your configuration details.
 5. Replace the Firebase configuration in `src/firebase.js` with your own.
